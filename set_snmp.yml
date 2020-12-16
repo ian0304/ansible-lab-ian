@@ -1,5 +1,6 @@
 ---
 - name: Manage GNS3 devices
+  hosts: all
   connection: local
   
   tasks:
