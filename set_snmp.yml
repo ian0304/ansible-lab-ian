@@ -1,9 +1,10 @@
 ---
 - name: Manage GNS3 devices
   gather_facts: false
+  hosts: 192.168.240.10
   connection: local
   
- tasks:
+  tasks:
     - name: Global SNMP Settings
       ios_config:
         lines:
