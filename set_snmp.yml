@@ -1,12 +1,9 @@
 ---
 - name: Manage GNS3 devices
-  gather_facts: false
-  hosts: 192.168.240.10
   connection: local
   
   tasks:
     - name: Global SNMP Settings
       ios_config:
         lines:
-          - snmp-server community python1 RO
-          - snmp-server community python2 RW
+          - no snmp-server community python1 RO
