@@ -1,0 +1,7 @@
+---
+ tasks:
+    - name: Global SNMP Settings
+      ios_config:
+        lines:
+          - snmp-server community python1 RO
+          - snmp-server community python2 RW
