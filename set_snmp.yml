@@ -7,4 +7,5 @@
     - name: Global SNMP Settings
       ios_config:
         lines:
-          - no snmp-server community python1 RO
+          - snmp-server community Test1 RO
+          - snmp-server community Test2 RW
